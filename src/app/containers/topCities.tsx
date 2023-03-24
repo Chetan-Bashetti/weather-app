@@ -36,7 +36,13 @@ const Flex = styled.div`
 `;
 
 const TopCities = () => {
-	let topCities = ['riyadh', 'Dammam', 'Jeddah', 'Mecca', 'Madina'];
+	let topCities = [
+		'riyadh',
+		'Dammam',
+		'Jeddah',
+		'Mecca',
+		'Al Madinah Al Munawwarah'
+	];
 
 	const { isLoading, locations, error } = useSelector(
 		(state: RootState) => state.topLocations

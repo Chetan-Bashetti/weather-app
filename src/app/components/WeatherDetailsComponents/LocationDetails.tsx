@@ -40,14 +40,12 @@ const LocationDetails = () => {
 		<LocationDetailsWrapper>
 			<PlaceTimeDetails>
 				<div style={{ display: 'flex', alignItems: 'center' }}>
-					<Typography text={searchResult.name + ', '} size='1.2em' />
 					<Typography
-						text={searchResult?.sys?.country}
+						text={searchResult.name + ', ' + searchResult?.sys?.country}
 						size='1.2em'
-						margin='0 0 0 0.2em'
 					/>
 				</div>
-				<Typography text={locationTime} size='1em' />
+				<Typography text={locationTime} size='1em' align='right' />
 			</PlaceTimeDetails>
 			<PlaceTimeDetails>
 				<Typography
@@ -67,6 +65,7 @@ const LocationDetails = () => {
 					<Typography
 						text={`pressure 💨 ${searchResult?.main?.pressure}`}
 						size='0.8em'
+						align='right'
 					/>
 				</LocationDescription>
 			</PlaceTimeDetails>
