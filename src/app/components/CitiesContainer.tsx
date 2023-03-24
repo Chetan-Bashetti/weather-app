@@ -59,7 +59,6 @@ const CitiesContainer: React.FC<CityContainerProps> = ({
 	};
 
 	const handleFinishUpdatingRecord = (id: number) => {
-		console.log(updatedLocationValue, 'updatedLocationValue');
 		setEdit(false);
 		if (updatedLocationValue === '') {
 			alert('location cannot be empty');
@@ -100,7 +99,13 @@ const CitiesContainer: React.FC<CityContainerProps> = ({
 				</IconHolder>
 			)}
 
-			<IconHolder onClick={() => deleteSelectedRecord(eachCity)}>❌</IconHolder>
+			{!edit ? (
+				<IconHolder onClick={() => deleteSelectedRecord(eachCity)}>
+					❌
+				</IconHolder>
+			) : (
+				''
+			)}
 			<IconHolder onClick={() => searchWithPreviousLocation(eachCity)}>
 				🔍
 			</IconHolder>
