@@ -82,6 +82,7 @@ const WeatherSearch = () => {
 	);
 
 	React.useEffect(() => {
+		window.document.title = 'Weather App - Tamkeen Technologies';
 		dispatch(getSearchResults({ mode: 'city', searchQuery: 'riyad' }));
 	}, []);
 
