@@ -32,7 +32,8 @@
 ## Operations to perform
 
 - First section is dedicated to top cities like Riyadh, Dammam, Jeddah, Mecca, Madina
-- In next section there are 2 input fields in 1st you can select the type of serach for ex - by city & by lat-long.
+- In next section there are 2 input fields in 1st you can select the type of serach for ex - by city or by lat-long.
+- You can click on clear button to clear the input fields.
 - Once you click on search you will be able to load the weather data of the searched city.
 - If wrong city name of lat-long entered UI will show the proper error.
 - Whenever you search that location will be cached and stored for further use, in this section you can see all the cached location.
