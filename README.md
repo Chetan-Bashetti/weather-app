@@ -24,7 +24,7 @@
 - This will open VSCode for this project.
 - To install the modules do npm || npm i || npm install.
 - Create a .env.local file for having the env variables.
-- Add 2 env variables NEXT_PUBLIC_OPEN_WEATHER_API_KEY - for the api key (create this API key in - https://home.openweathermap.org/api_keys)
+- Add 2 env variables NEXT_PUBLIC_OPEN_WEATHER_API_KEY - for the api key login and create this API key in - https://home.openweathermap.org/api_keys
 - And NEXT_PUBLIC_OPEN_WEATHER_API_URL - for open weather api end point - (https://api.openweathermap.org/data/2.5/weather).
 - Once you are done with installing the modules and added env variables do npm run dev.
 - This will start the local server on machine on PORT 3000 - http://localhost:3000/
