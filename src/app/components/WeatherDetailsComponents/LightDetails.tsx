@@ -64,7 +64,12 @@ const LightDetails = () => {
 						weight='200'
 					/>
 				</LightDescription>
-				<Typography text={sunRiseTime} size='1.5em' weight='200' />
+				<Typography
+					text={sunRiseTime}
+					size='1.5em'
+					weight='200'
+					align='right'
+				/>
 			</LightDataWrapper>
 			<LightDataWrapper>
 				<LightDescription>
@@ -76,7 +81,7 @@ const LightDetails = () => {
 						weight='200'
 					/>
 				</LightDescription>
-				<Typography text={sunSetTime} size='1.5em' weight='200' />
+				<Typography text={sunSetTime} size='1.5em' weight='200' align='right' />
 			</LightDataWrapper>
 		</LightDetailsWrapper>
 	);
