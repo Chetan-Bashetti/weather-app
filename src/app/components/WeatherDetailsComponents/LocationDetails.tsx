@@ -44,20 +44,23 @@ const LocationDetails = () => {
 						text={searchResult.name + ', ' + searchResult?.sys?.country}
 						size='1.2em'
 					/>
-					<img
-						src={`http://openweathermap.org/img/wn/${searchResult?.weather[0]?.icon}.png`}
-					/>
 				</div>
 				<Typography text={locationTime} size='1em' align='right' />
 			</PlaceTimeDetails>
 			<PlaceTimeDetails>
-				<Typography
-					text={`${searchResult?.main?.temp}° C`}
-					size='2.5em'
-					margin='0.3em 0 0 0 '
-					weight='200'
-				/>
-
+				<div style={{ display: 'flex', alignItems: 'center' }}>
+					<Typography
+						text={`${searchResult?.main?.temp}° C`}
+						size='2em'
+						margin='0 0 0 0 '
+						weight='200'
+					/>
+					{searchResult?.weather?.length && (
+						<img
+							src={`http://openweathermap.org/img/wn/${searchResult?.weather[0]?.icon}.png`}
+						/>
+					)}
+				</div>
 				<LocationDescription>
 					{searchResult?.weather?.length && (
 						<Typography
